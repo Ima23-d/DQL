@@ -23,3 +23,9 @@ SELECT id_aluno FROM alunos WHERE nome_aluno ILIKE %s
     JOIN instrutores ON treinos.id_instrutor = instrutores.id_instrutor
     JOIN treinos_alunos ON treinos.id_treinos = treinos_alunos.id_treinos
     WHERE treinos_alunos.id_aluno = %s
+
+-- -- ----------------
+-- Ver Aluno Personal
+-- -------------------
+SELECT id_aluno, nome_aluno, email FROM alunos
+
